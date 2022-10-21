@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function leftTapped(){
+            alert ('left');
+
+        }
+        function rightTapped(){
+            alert('right');
+        }
+
+        function changeImagePathWith(path){
+            //"http://images.clipartpanda.com/smiley-face-png-1407-smiley-face.png"
+            documen.getElementById("img").src= path;
+        }
+        window.onload=function (){
+            windows.sizeNotification.postMessage({width: document.width,height: document.body.scrollHeight});};
+            
+            var postAScriptbutton = document.getElementById('PostAScript');
+
+            postAScriptbutton.addEventListener('click',function (){
+                postAScript.postMessage('posting a script');
+            },false);
+            function callFlutter2(){
+                Postascript.postMessage('Posting a script');
+            }
+            
+            function callFlutter(){
+                Print.postMessage("JS CALLED FLUTTER");
+            }
+            
+    </script>
+    <h1>Testing js </h1>
+    <button onclick="callFlutter()">callFlutter</button>
+    <button onclick="callFlutter2()">callFlutter</button>
+
+</body>
+</html>
